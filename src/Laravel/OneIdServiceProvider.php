@@ -13,7 +13,7 @@ class oneIdServiceProvider extends baseServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'./../configs/oneId.php' => config_path('oneId.php'),
+            __DIR__.'./../../configs/oneId.php' => config_path('oneId.php'),
         ]);
     }
     /**
@@ -24,7 +24,7 @@ class oneIdServiceProvider extends baseServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'./../configs/oneId.php', 'oneId'
+            __DIR__.'./../../configs/oneId.php', 'oneId'
         );
         $this->app->bind(OneIdClient::class);
     }
