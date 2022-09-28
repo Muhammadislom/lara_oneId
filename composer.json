@@ -9,7 +9,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "oneId\\": "./src"
+      "oneId\\": "src/Laravel"
     }
   },
   "autoload-dev": {
@@ -26,10 +26,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "src\\Laravel\\ServiceProvider\\OneIdServiceProvider"
+        "Laravel\\ServiceProvider\\OneIdServiceProvider.php"
         ],
       "aliases": {
-        "oneId": "src\\Laravel\\Facade\\OneIdFacade"
+        "oneId": "Laravel\\Facade\\OneIdFacade.php"
       }
     }
   }
