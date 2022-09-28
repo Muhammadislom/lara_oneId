@@ -27,10 +27,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "OneId\\OneIdServiceProvider"
+        "oneId\\Laravel\\OneIdServiceProvider"
       ],
       "aliases": {
-        "OneId": "OneId\\OneIdFacade"
+        "OneId": "oneId\\Laravel\\OneIdFacade"
       }
     }
   }

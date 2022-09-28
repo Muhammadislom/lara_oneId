@@ -1,6 +1,6 @@
 <?php
 
-namespace oneIdAuth;
+namespace oneId\Laravel;
 
 use Illuminate\Support\Facades\Facade;
 
