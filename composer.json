@@ -1,0 +1,37 @@
+{
+  "name": "muhammadislom/auth-one-id",
+  "description": "auth in OneID",
+  "type": "library",
+  "require": {
+    "php": "8.*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "OneId\\": "./src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "OneId\\Tests\\": "./tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "Muhammadislom"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "OneId\\OneIdServiceProvider"
+      ],
+      "aliases": {
+        "OneId": "OneId\\OneIdFacade"
+      }
+    }
+  }
+}
