@@ -1,6 +1,6 @@
 {
   "name": "muhammadislom/auth-one-id",
-  "description": "auth in OneID",
+  "description": "auth in oneId",
   "type": "library",
   "require": {
     "php": "7.4.*|8.1.*"
@@ -10,7 +10,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "OneId\\": "./src"
+      "oneId": "src/"
     }
   },
   "autoload-dev": {
@@ -20,16 +20,17 @@
   },
   "authors": [
     {
-      "name": "Muhammadislom"
+      "name": "Muhammadislom",
+      "email": "islom.pr@gmail.com"
     }
   ],
   "extra": {
     "laravel": {
       "providers": {
-        "OneId": "src\\Laravel\\Laravel"
+        "oneId": "src\\Laravel"
       },
       "aliases": {
-        "OneId": "src\\Laravel\\Laravel"
+        "oneId": "src\\Laravel"
       }
     }
   }

@@ -1,6 +1,6 @@
 <?php
 
-namespace oneId\Laravel;
+namespace oneId;
 
 class OneIdClient
 {

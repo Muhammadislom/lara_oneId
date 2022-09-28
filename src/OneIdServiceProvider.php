@@ -1,5 +1,5 @@
 <?php
-namespace oneId\Laravel;
+namespace oneId;
 
 use Illuminate\Support\ServiceProvider as baseServiceProvider;
 
