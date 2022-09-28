@@ -3,7 +3,7 @@
   "description": "auth in OneID",
   "type": "library",
   "require": {
-    "php": "8.1"
+    "php": "7.4.*|8.1.*"
   },
   "license": "MIT",
   "autoload": {
@@ -13,16 +13,17 @@
   },
   "authors": [
     {
-      "name": "skip"
+      "name": "Muhammadislom",
+      "email": "islom.pr@gmail.com"
     }
   ],
   "extra": {
     "laravel": {
       "providers": [
-        "OneId\\Api\\ServiceProvider"
+        "OneId\\ServiceProvider"
       ],
       "aliases": {
-        "OneId": "OneId\\Api\\Facade"
+        "OneId": "OneId\\Facade"
       }
     }
   }
