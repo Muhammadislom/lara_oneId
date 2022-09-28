@@ -20,10 +20,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "OneId\\ServiceProvider"
+        "ServiceProvider"
       ],
       "aliases": {
-        "OneId": "OneId\\Facade"
+        "OneId": "Facade"
       }
     }
   }
