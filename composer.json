@@ -22,15 +22,5 @@
       "name": "Muhammadislom",
       "email": "islom.pr@gmail.com"
     }
-  ],
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Laravel\\ServiceProvider\\OneIdServiceProvider.php"
-        ],
-      "aliases": {
-        "oneId": "Laravel\\Facade\\OneIdFacade.php"
-      }
-    }
-  }
+  ]
 }
