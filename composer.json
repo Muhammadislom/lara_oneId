@@ -3,34 +3,26 @@
   "description": "auth in OneID",
   "type": "library",
   "require": {
-    "php": "7.4.*|8.1.*"
-  },
-  "require-dev": {
+    "php": "8.1"
   },
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "oneId": "./src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "OneId\\Tests\\": "./tests"
+      "Root\\Html\\": "src/"
     }
   },
   "authors": [
     {
-      "name": "Muhammadislom",
-      "email": "islom.pr@gmail.com"
+      "name": "skip"
     }
   ],
   "extra": {
     "laravel": {
-      "providers": {
-        "OneId": "src\\Laravel"
-      },
+      "providers": [
+        "OneId\\Api\\ServiceProvider"
+      ],
       "aliases": {
-        "OneId": "src\\Laravel"
+        "OneId": "OneId\\Api\\Facade"
       }
     }
   }
