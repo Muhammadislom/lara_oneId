@@ -2,6 +2,7 @@
   "name": "muhammadislom/auth-one-id",
   "description": "auth in oneId",
   "type": "library",
+  "version": "1.0.0",
   "require": {
     "php": "7.4.*|8.1.*"
   },
@@ -25,10 +26,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "oneId\\Laravel\\ServiceProvider"
+        "Laravel\\ServiceProvider"
         ],
       "aliases": {
-        "oneId": "oneId\\Laravel\\Facade"
+        "oneId": "Laravel\\Facade"
       }
     }
   }
