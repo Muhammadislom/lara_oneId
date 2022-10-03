@@ -1,9 +1,9 @@
 <?php
 namespace Muhammadislom\oneId\Providers;
 
-use Illuminate\Support\ServiceProvider as baseServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class oneIdServiceProvider extends baseServiceProvider
+class oneIdServiceProvider extends ServiceProvider
 {
 
     public function boot()
@@ -14,11 +14,8 @@ class oneIdServiceProvider extends baseServiceProvider
         $this->mergeConfigFrom(__DIR__.'../../config/config.php', 'oneId');
     }
 
-//    public function register()
-//    {
-//        $this->mergeConfigFrom(
-//            __DIR__.'./../../configs/oneId.php', 'oneId'
-//        );
-//        $this->app->bind(OneIdClient::class);
-//    }
+    public function register()
+    {
+        $this->mergeConfigFrom(__DIR__.'../../config/config.php', 'oneId');
+    }
 }
