@@ -12,9 +12,10 @@ class oneIdServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/../../config/config.php' => config_path('oneId.php'),
-        ]);
+        $path = realpath(__DIR__.'/../../config/config.php');
+
+        $this->publishes([$path => config_path('oneId.php')], 'config');
+        $this->mergeConfigFrom($path, 'oneId');
     }
 
     public function register()
