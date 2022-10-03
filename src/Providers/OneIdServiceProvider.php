@@ -14,8 +14,8 @@ class oneIdServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'../../config/config.php', 'oneId');
     }
 
-    public function register()
-    {
-        $this->mergeConfigFrom(__DIR__.'../../config/config.php', 'oneId');
-    }
+//    public function register()
+//    {
+//        $this->mergeConfigFrom(__DIR__.'../../config/config.php', 'oneId');
+//    }
 }
