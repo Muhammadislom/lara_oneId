@@ -14,7 +14,7 @@ class oneIdServiceProvider extends ServiceProvider
     {
         $path = realpath(__DIR__.'/../../config/config.php');
 
-        $this->publishes([$path => config_path('config.php')], 'config');
+        $this->publishes([$path => config_path('config.php')], 'oneId');
         $this->mergeConfigFrom($path, 'oneId');
     }
 
