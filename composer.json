@@ -41,9 +41,5 @@
         "Muhammadislom\\oneId\\Providers\\OneIdServiceProvider"
       ]
     }
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "minimum-stability": "dev"
+  }
 }
