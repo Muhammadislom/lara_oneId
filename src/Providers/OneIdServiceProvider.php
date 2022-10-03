@@ -5,12 +5,16 @@ use Illuminate\Support\ServiceProvider;
 
 class oneIdServiceProvider extends ServiceProvider
 {
-
+    /**
+     * Загрузка любых служб пакета.
+     *
+     * @return void
+     */
     public function boot()
     {
-        $path = realpath(__DIR__.'/../../config/config.php');
-        $this->publishes([$path => config_path('oneId.php')], 'config');
-        $this->mergeConfigFrom($path, 'oneId');
+        $this->publishes([
+            __DIR__.'/../../config/config.php' => config_path('oneId.php'),
+        ]);
     }
 
 //    public function register()
