@@ -1,5 +1,5 @@
 <?php
-namespace oneId;
+namespace Muhammadislom\oneId\Providers;
 
 use Illuminate\Support\ServiceProvider as baseServiceProvider;
 

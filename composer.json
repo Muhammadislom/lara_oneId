@@ -34,11 +34,15 @@
   "extra": {
     "laravel": {
       "aliases": {
-        "Muhammadislom\\oneId\\": "Muhammadislom\\oneId\\Facades\\OneIdFacade.php"
+        "oneId": "Muhammadislom\\oneId\\Facade\\OneIdFacade"
       },
       "providers": [
-        "Muhammadislom\\oneId\\Providers\\OneIdServiceProvider.php"
+        "Muhammadislom\\oneId\\Providers\\OneIdServiceProvider"
       ]
     }
-  }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev"
 }
