@@ -2,35 +2,43 @@
   "name": "muhammadislom/auth-one-id",
   "description": "auth in oneId",
   "type": "library",
-  "version": "1.0.0",
+  "homepage": "https://github.com/Muhammadislom/lara_oneId",
+  "support": {
+    "issues": "https://github.com/Muhammadislom/lara_oneId/issues",
+    "source": "https://github.com/Muhammadislom/lara_oneId"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Muhammadislom",
+      "email": "islom.pr@gmail.com",
+      "homepage": "https://github.com/Muhammadislom",
+      "role": "Developer"
+    }
+  ],
   "require": {
     "php": "7.4.*|8.1.*"
   },
-  "license": "MIT",
+  "require-dev": {
+  },
   "autoload": {
     "psr-4": {
-      "oneId\\": "src/Laravel"
+      "Muhammadislom\\oneId\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "oneId\\": "./tests"
+      "Muhammadislom\\oneId\\Test\\": "tests/"
     }
   },
-  "authors": [
-    {
-      "name": "Muhammadislom",
-      "email": "islom.pr@gmail.com"
-    }
-  ],
   "extra": {
     "laravel": {
-      "providers": [
-        "Laravel\\ServiceProvider\\OneIdServiceProvider.php"
-        ],
       "aliases": {
-        "oneId": "Laravel\\Facade\\OneIdFacade.php"
-      }
+        "Muhammadislom\\oneId\\": "Muhammadislom\\oneId\\Facades\\OneIdFacade.php"
+      },
+      "providers": [
+        "Muhammadislom\\oneId\\Providers\\OneIdServiceProvider.php"
+      ]
     }
   }
 }
