@@ -10,6 +10,8 @@ class oneIdServiceProvider extends ServiceProvider
      *
      * @return void
      */
+
+
     public function boot()
     {
         $path = realpath(__DIR__.'/../../config/config.php');
