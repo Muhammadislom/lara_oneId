@@ -35,10 +35,10 @@
   "extra": {
     "laravel": {
       "aliases": {
-        "oneId": "muhammadislom\\oneid\\Facades\\OneIdFacade.php"
+        "oneId": "muhammadislom\\oneid\\Facades\\OneIdFacade"
       },
       "providers": [
-        "muhammadislom\\oneid\\Providers\\OneIdServiceProvider.php"
+        "muhammadislom\\oneid\\Providers\\OneIdServiceProvider"
       ]
     }
   }
