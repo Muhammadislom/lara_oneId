@@ -1,6 +1,6 @@
 <?php
 
-namespace Muhammadislom\oneId\Facades;
+namespace muhammadislom\oneid\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

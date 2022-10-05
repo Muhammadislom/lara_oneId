@@ -1,5 +1,5 @@
 <?php
-namespace Muhammadislom\oneId\Providers;
+namespace muhammadislom\oneid\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,8 +18,12 @@ class oneIdServiceProvider extends ServiceProvider
 
         $this->publishes([$path => config_path('oneId.php')], 'oneId');
         $this->mergeConfigFrom($path, 'oneId');
-        $this->loadRoutesFrom(__DIR__.'/../Routes/api.php');
-        $this->loadRoutesFrom(__DIR__.'/../Routes/web.php');
+
+//        $this->loadRoutesFrom(__DIR__.'/../Routes/api.php');
+//        $this->loadRoutesFrom(__DIR__.'/../Routes/web.php');
+        $this->loadRoutesFrom();
+
+
     }
 
     public function register()

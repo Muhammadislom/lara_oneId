@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-Route::get('test/page/ap', function () {
+Route::get('api/test/page', function () {
     return 'test/api';
 });

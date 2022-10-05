@@ -1,5 +1,5 @@
 {
-  "name": "muhammadislom/auth-one-id",
+  "name": "muhammadislom/oneid",
   "description": "auth in oneId",
   "type": "library",
   "homepage": "https://github.com/Muhammadislom/lara_oneId",
@@ -24,21 +24,21 @@
   },
   "autoload": {
     "psr-4": {
-      "Muhammadislom\\oneId\\": "src/"
+      "muhammadislom\\oneid\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Muhammadislom\\oneId\\Test\\": "tests/"
+      "muhammadislom\\oneid\\Test\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "aliases": {
-        "oneId": "Muhammadislom\\oneId\\Facade\\OneIdFacade"
+        "oneId": "muhammadislom\\oneid\\Facades\\OneIdFacade.php"
       },
       "providers": [
-        "Muhammadislom\\oneId\\Providers\\OneIdServiceProvider"
+        "muhammadislom\\oneid\\Providers\\OneIdServiceProvider.php"
       ]
     }
   }
