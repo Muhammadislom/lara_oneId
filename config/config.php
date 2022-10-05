@@ -1,17 +1,17 @@
 <?php
 
 return [
-    'authorizationUrl' => env( 'ONEID_AUTHORIZATION_URL', 'https://sso.egov.uz/sso/oauth/Authorization.do' ),
+    'authorization_url' => env( 'ONEID_AUTHORIZATION_URL', 'https://sso.egov.uz/sso/oauth/Authorization.do' ),
 
-    'responseType' => env( 'ONEID_RESPONSE_TYPE', null),
+    'response_type' => env( 'ONEID_RESPONSE_TYPE', null),
 
-    'clientId' => env( 'ONEID_CLIENT_ID', null ),
+    'client_id' => env( 'ONEID_CLIENT_ID', null ),
 
-    'redirectUri' => route('login'),
+    'redirect_uri' => route('login'),
 
-    'clientSecret' => env( 'ONEID_CLIENT_SECRET', null),
+    'client_secret' => env( 'ONEID_CLIENT_SECRET', null),
 
     'scope' => env( 'ONEID_SCOPE', null ),
 
-    'stateArr' => [ 'method' => null ],
+    'state_arr' => [ 'method' => null ],
 ];
